@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+}
+
+.searchCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    background: rgb(2,0,36);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    background-image: url("./images/Copy\ of\ Untitled.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    color: #A6A6A6;
+    background-image: url("./images/lupa2.png") no-repeat scroll 7px 7px;
+    padding-left:30px;
+    margin-left: 10px;
+}
+
+button{
+    border-radius: 30px;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(252, 72, 40) ;
+    border: none;
+    color: white;
+    margin-left: 5px;
+}
+
+.resultCont{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.instruction{
+    margin: auto;
+}
+
+.instruction h1{
+    color: white;
+    font-family: 'Audiowide', cursive;
+}
+
+.albumArt{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#songTitle{
+    color: #f7f7f7;
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.songDeets{
+    margin: auto;
+    color: #f7f7f7;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.listenOn{
+    width: 800px;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.icon{
+    height: 220px;
+    width: 220px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 3px;
+}
+
+.player{
+    width: 220px;
+}
+

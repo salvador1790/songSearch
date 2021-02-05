@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+    <body>
+
+        <div class="wrapper">
+            <div class="searchCont">
+            <div class="logo">
+
+            </div>
+
+            <form >
+                
+                <input type="text" id="songName" placeholder="Song Name">
+                <input type="text" id="artistName" placeholder="Artist Name">
+                <button type="submit" id="submit">Search</button>
+            
+            </form>
+
+
+
+
+            </div>
+
+
+            <div class="resultCont">
+                <div class="instruction">
+                    <h1>Search to preview song.</h1>
+                </div>
+
+                <div class="result">
+                    <div class="albumArt">
+                        <audio id="clip" src="" controls preload="">
+                            <p>This browswer does not support your audio.</p>
+                        </audio>
+                    </div>
+
+                    
+                </div>
+
+                <div class="songDeets">
+                    <h1 id="songTitle">Song Name</h1>
+                    <h2 id=artist>Artist</h3>
+                    <h3 id="album">Album</h4>
+                </div>
+
+                <div class="listenOn">
+                    <div class="discover1 icon">
+                        <audio id="clip2" class="player" src="" controls preload="">
+                            <p>This browswer does not support your audio.</p>
+                        </audio>
+                    </div>
+                    <div class="discover2 icon">
+                        <audio id="clip3" class="player" src="" controls preload="">
+                            <p>This browswer does not support your audio.</p>
+                        </audio>
+                    </div>
+                    <div class="discover3 icon">
+                        <audio id="clip4" class="player" src="" controls preload="">
+                            <p>This browswer does not support your audio.</p>
+                        </audio>
+                    </div>
+                </div>
+
+
+
+        </div>
+
+
+        </div>
+
+
+
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
