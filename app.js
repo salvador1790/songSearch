@@ -8,11 +8,12 @@ $("#submit").on("click",function(e){
     var artistQuery = $("#artistName").val();
     var searchQuery = $("#songName").val();
 
-    var endPoint  = 'https://api.deezer.com/search?q=artist:"'  + artistQuery + '" track:"' + searchQuery + '"&index=0&limit=1&strict=on';
+    var endPoint  = 'https://api.deezer.com/search?q=artist:"'  + artistQuery + '" track:"' + searchQuery + '"&index=0&limit=1&strict=on&output=jsonp';
 
     $.ajax({
         url: endPoint,
-        method: "GET"
+        method: "GET",
+        dataType:'jsonp'
     }).then(function(response){
         var id = response.data[0].artist.id;
         console.log(response);
@@ -25,8 +26,9 @@ $("#submit").on("click",function(e){
         $("#clip").attr("src",response.data[0].preview)
 
         $.ajax({
-            url: "https://api.deezer.com/artist/" + id + "/top?limit=20",
-            method:"GET"
+            url: "https://api.deezer.com/artist/" + id + "/top?limit=20&output=jsonp",
+            method:"GET",
+            dataType:'jsonp'
         }).then(function(trackList){
             console.log(trackList);
             var randomNum = Math.floor(Math.random() * 10);
