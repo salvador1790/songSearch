@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+audio{
+    visibility: hidden;
+}
+
 .searchCont{
     display: flex;
     flex-direction: row;
@@ -13,7 +17,7 @@ body{
     background: rgb(2,0,36);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 1100px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -64,14 +68,13 @@ button{
 }
 
 .instruction h1{
-    color: white;
+    color: #05CB94;
     font-family: 'Audiowide', cursive;
 }
 
 .albumArt{
     height: 300px;
     width: 300px;
-    background-color: white;
     border-radius: 5px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -99,6 +102,7 @@ button{
     color: #f7f7f7;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    display: none;
 }
 
 .listenOn{
@@ -108,7 +112,8 @@ button{
     flex-direction: row;
     justify-content: space-around;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
+    visibility: hidden;
 }
 
 .icon{
@@ -125,5 +130,76 @@ button{
 
 .player{
     width: 220px;
+    z-index: 1;
+    position: relative;
 }
+
+.img_wrap{
+  background: rgba(29, 106, 154, 0.72);
+  width: 220px;
+  height: 220px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  visibility: hidden;
+  color: #f7f7f7;
+  position: relative;
+}
+
+.icon:hover .img_wrap{
+    visibility: visible;
+}
+
+#other{
+    text-align: center;
+    font-weight: bold;
+    color: #05CB94;
+    font-family: 'Audiowide', cursive;
+    visibility: hidden;
+}
+
+#modalbody{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+#modalClose{
+    float: right;
+    font-size: 30px;
+}
+
+#modalClose:hover{
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#modalcontent{
+    width: 40%;
+    background-color: #05CB94;
+    margin: 10% auto;
+    padding: 20px;
+    height: 200px;
+    background-image:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./holly-mandarich-UVyOfX3v0Ls-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+#modalForm{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px; 
+}
+
+
 
