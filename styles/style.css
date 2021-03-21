@@ -55,16 +55,15 @@ button{
 }
 
 .resultCont{
-    width: 1200px;
+    width: 100%;
     height: 600px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
 }
 
 .instruction{
-    margin: auto;
+   text-align: center;
 }
 
 .instruction h1{
@@ -197,5 +196,8 @@ button{
     font-size: 20px; 
 }
 
-
-
+@media only screen and (max-width: 670px) {
+    input{
+        width: 100px;
+    }
+  }
